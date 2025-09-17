@@ -1,7 +1,59 @@
-.awal{
+.AWAL{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
+    background-color:darkblue;
+    color: white;
+    font-size: 18px;
+}
+.AWAL button{
     background-color: blue;
+    border-radius: 10px;
+    size: 10px;
+    color: white;
+    width: 100px;
+    height: 20px;
+
+}
+.AWAL h3{
+    font-style: Awesome;
+}
+.pertama{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    color: white;
+    padding: 0 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.pertama img{
+    width:150px ;
+    height: 60px;
+}
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.lanjutpertama{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.ftl{
+    color: aqua;
+}
+.lol{
+    background-color: black;
+}
+body header nav{
+    
 }
