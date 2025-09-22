@@ -1,3 +1,4 @@
+
 const cards = document.querySelectorAll('.card');
 
 function closeAllMenus() {
@@ -7,22 +8,20 @@ function closeAllMenus() {
 }
 
 cards.forEach(card => {
-  const toggle = card.querySelector('.toggle'); // teks
-  const plus   = card.querySelector('.plus');   // tanda +
+  const toggle = card.querySelector('.kata'); `.kata`
   const menu   = card.querySelector('.menu');
 
-  function handleClick(e) {
-    e.stopPropagation();
-    if (menu.classList.contains('show')) {
-      menu.classList.remove('show');
-    } else {
-      closeAllMenus();
-      menu.classList.add('show');
-    }
+  if (toggle && menu) {
+    toggle.addEventListener('click', (e) => {
+      e.stopPropagation(); 
+      if (menu.classList.contains('show')) {
+        menu.classList.remove('show');
+      } else {
+        closeAllMenus();
+        menu.classList.add('show');
+      }
+    });
   }
-
-  if (toggle && menu) toggle.addEventListener('click', handleClick);
-  if (plus && menu) plus.addEventListener('click', handleClick);
 });
 
 document.addEventListener('click', () => {
