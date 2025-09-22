@@ -6,10 +6,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentSlide = 0;
     let autoSlideInterval;
 
-    rey.forEach((_, index) => {
+    rey.forEach((_, indx) => {
         const indicator = document.createElement('span');
         indicator.classList.add('indicator');
-        if (index === 0) {
+        if (indx === 0) {
             indicator.classList.add('active');
         }
         indicatorsContainer.appendChild(indicator);
@@ -39,10 +39,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const stopAutoSlide = () => {
         clearInterval(autoSlideInterval);
     };
-    indicators.forEach((indicator, index) => {
+    indicators.forEach((indicator, indx) => {
         indicator.addEventListener('click', () => {
             stopAutoSlide();
-            currentSlide = index;
+            currentSlide = indx;
             updateCarousel(currentSlide);
             startAutoSlide();
         });
